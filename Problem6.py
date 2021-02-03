@@ -2,6 +2,7 @@
 # Find the difference between the sum of the squares of the first one hundred natural numbers
 #  and the square of the sum.#
 
+#approach 1 with two function 
 def square_sum(n):
     sum1 = 0
     for i in range(n):
@@ -18,3 +19,13 @@ def sum_square(n):
 
 
 print(sum_square(101) - square_sum(101))
+
+#approach 2, takes 311 steps
+def difference(n):
+    y = 0
+    x =0
+    for i in range(n):
+        x = x + i*i
+        y = y + i
+    return y*y - x
+print(difference(101))
