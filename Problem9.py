@@ -10,7 +10,7 @@ Find the product abc.
 """
 
 #since a < b < c and a + b + c = 1000
-#stop 400 to save time
+#stop at 400 to save time
 
 for a in range(1, 400):
     for b in range(1, 400):
