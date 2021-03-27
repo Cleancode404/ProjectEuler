@@ -1,0 +1,1 @@
+#cyclical figurate numbers
