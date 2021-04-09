@@ -1,0 +1,3 @@
+"""
+digit factorial chains
+"""
