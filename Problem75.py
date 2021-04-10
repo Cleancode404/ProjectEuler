@@ -1,0 +1,3 @@
+"""
+Singular integer right triangles
+"""
