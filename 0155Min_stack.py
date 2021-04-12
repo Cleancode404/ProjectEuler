@@ -13,7 +13,20 @@ class MinStack(object):
             self.min_stack.append(x)
             return 
         if x <= self.min_stack[-1]:
-            self.min_stack.append(x):
-            
+            self.min_stack.append(x)
+        else:
+            self.min_stack.append(self.min_stack[-1])
+
+    def pop(self):
+        if len(self.stack)>0:
+            self.min_stack.pop()
+            self.stack.pop()
+
+    def top(self):
+        if len(self.stack) >0:
+            return self.stack[-1]
+        return None
+
+
         
 
