@@ -1,0 +1,3 @@
+"""
+Square root digital expansion
+"""
