@@ -8,18 +8,20 @@ Approach
 1. identify if a number is prime
 2. sum them up below two million
 """
-def sum_prime(n):
-    sum = 0
-    i = 2
-    while sum < n:
-        if n % i == 0:
-            sum = sum + i 
-            i += 1
-        else:
-            i += 1
-    return sum
+import math
+def sum_prime(num):
+    for i in range(2, int(math.sqrt(num))+1 ):
+        if (num % i == 0):
+            return False
+    return True
 
-#check solution
-print(sum_prime(2000000))
+sum = 0
+
+for i in range(2, 2000000):
+    if sum_prime(i):
+        sum += i
+
+print(sum)
+
 
             
