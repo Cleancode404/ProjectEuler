@@ -1,0 +1,3 @@
+"""
+Cuboid route
+"""
