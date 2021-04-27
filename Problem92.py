@@ -1,0 +1,4 @@
+"""
+Square digit chains
+
+"""
