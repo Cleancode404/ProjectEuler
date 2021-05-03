@@ -1,0 +1,3 @@
+"""
+Anagramic squares
+"""
