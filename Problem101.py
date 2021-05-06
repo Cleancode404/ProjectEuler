@@ -1,0 +1,3 @@
+"""
+Optimum polynomial
+"""
