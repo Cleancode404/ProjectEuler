@@ -1,0 +1,3 @@
+"""
+Special subset sums: testing
+"""
