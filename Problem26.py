@@ -20,3 +20,21 @@ It can be seen that 1/7 has a 6-digit recurring cycle.
 Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
 
 """""
+
+import itertools
+
+def compute():
+    ans = max(range(1, 1000), key = reciprocal_cycle_len)
+    return str(ans)
+
+def reciprocal_cycle_len(n):
+    seen = {}
+    x = 1
+    for i in itertools.count():
+        if x in seen:
+            return i - seen[x]
+
+        else:
+            x = x *10 % n
+if __name__ == "__main__":
+    print(compute())
