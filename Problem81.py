@@ -1,5 +1,4 @@
 """
-
 Path sum: two ways
 
 """
