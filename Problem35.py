@@ -10,4 +10,25 @@ There are thirteen such primes below 100:
 How many circular primes are there below one million?
 
 """""
-
+if __name__ == '__main__':
+    N = 1000000
+    num = [True] * N
+    num[0] = num[1] = False
+    for i in range(2, int(N ** 0.5) + 1):
+        if num[i]:
+            for j in range(i * i, N, i):
+                num[j] = False
+    count = 0
+    for i in range(N):
+        if num[i]:
+            temp = i
+            n = 1
+            for j in range(len(str(i)) - 1):
+                temp = temp % (10 ** (len(str(i)) - 1)) * 10 + temp // (10 ** (len(str(i)) - 1))
+                if num[temp]:
+                    n += 1
+                else:
+                    break
+            if n == len(str(i)):
+                count += 1
+    print(count)
