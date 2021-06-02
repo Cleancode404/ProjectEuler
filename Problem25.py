@@ -25,3 +25,11 @@ What is the index of the first term in the Fibonacci sequence
  to contain 1000 digits?
 
 """""
+
+if __name__ == '__main__':
+    order = 0
+    a, b = 0, 1
+    while len(str(a)) < 1000:
+        a, b = b, a + b
+        order += 1
+    print(order)
