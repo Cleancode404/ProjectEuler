@@ -9,3 +9,9 @@ How many n-digit positive integers exist which are also an nth power?
 """""
 
 
+import math
+
+if __name__ == '__main__':
+    count = 1 + sum(int( 1 + 1 / (math.log(10, i) - 1)) for i in range(2, 10))
+    print(count)
+
