@@ -9,3 +9,11 @@ How many such routes are there through a 20×20 grid?
 
 """""
 
+
+
+
+if __name__ == '__main__':
+    result = 1
+    for i in range(1, 21):
+        result = result * (41 - i) // i
+    print(result)
