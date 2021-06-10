@@ -13,3 +13,23 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 '''''
 
+def divisor_sum(n):
+    if n == 0 or n == 1:
+        return 0
+    result = 1
+    for i in range(2, int(n ** 0.5)):
+        if n % i == 0:
+            result += i + n // i
+    if int(n ** 0.5) ** 2 == n:
+        result += int(n ** 0.5)
+    return result
+
+def d(n):
+    return n != divisor_sum(n) and n == divisor_sum(divisor_sum(n))
+
+if __name__ == '__main__':
+    result = 0
+    for i in range(10000):
+        if d(i):
+            result += i
+    print(result)
