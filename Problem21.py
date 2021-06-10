@@ -12,3 +12,4 @@ For example, the proper divisors of 220 are
 Evaluate the sum of all the amicable numbers under 10000.
 
 '''''
+
