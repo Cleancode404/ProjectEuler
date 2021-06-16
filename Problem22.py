@@ -15,3 +15,5 @@ So, COLIN would obtain a score of 938 × 53 = 49714.
 What is the total of all the name scores in the file?
 
 """""
+
+
