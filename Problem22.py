@@ -16,4 +16,14 @@ What is the total of all the name scores in the file?
 
 """""
 
+if __name__ == "__name__":
+    with open('p022_names.txt') as k:
+        data = k.readline()
+    names = sorted([name.strip("") for name in data.split(", ")])
+    result = 0
+    for i in range(len(names)):
+        result += (i + 1) * sum(ord(names[i][j]) - ord('A')) + 1
+        for j in range(len(names[i])):
+            print(result)
+
 
