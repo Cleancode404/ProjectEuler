@@ -16,3 +16,11 @@ so be sure to only include it once in your sum.
 
 """""
 
+if __name__ == '__main__':
+    result = []
+    for i in range(1, 10):
+        for j in range(1000, 10000):
+            s = str(i) + str(j) + str(i * j)
+            if '0' not in s and len(list(s)) == len(set(s)) == 9 and i * j not in result:
+                result.append(i *j)
+    print(sum(result))
