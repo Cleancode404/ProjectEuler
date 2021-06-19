@@ -23,3 +23,24 @@ If one complete new layer is wrapped around the spiral above,
 
 """""
 
+import time 
+
+def isprime(n):
+    if n < 2:
+        return False
+    
+    if n % 2 == 0 or n % 3 == 0 or n % 5 == 0:
+        return n == 2 or n == 3 or n == 5
+    return all (n % k != 0 for k in range (7, int(n**.5) + 1, 2))
+
+
+if __name__ == '__main__':
+    start = time.process_time()
+    count = 3
+    i = 3
+    while count / (2*i - 1) >= 0.1:
+        i += 2
+        count += [isprime(x) for x in [i**2 - i + 1,
+        i**2 - 2*i + 2, i**2 - 3 * i + 3]].count(True)
+        print(i)
+        print('Runtime is', time.process_time() - start)
