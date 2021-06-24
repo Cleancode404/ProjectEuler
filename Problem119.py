@@ -1,0 +1,4 @@
+"""
+Digit power sum
+
+"""
