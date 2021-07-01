@@ -1,0 +1,4 @@
+"""
+Efficient exponentiation
+
+"""
