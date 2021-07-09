@@ -8,3 +8,5 @@ Considering natural numbers of the form, ab, where a, b < 100,
 
 """""
 
+
+
