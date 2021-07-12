@@ -1,7 +1,6 @@
 #truncatable primes
 """
 
-
 The number 3797 has an interesting property. 
 Being prime itself, 
 it is possible to continuously remove digits from left to right, 
@@ -14,5 +13,7 @@ from left to right and right to left.
 NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 """""
+
+
 
 
