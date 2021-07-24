@@ -1,6 +1,4 @@
 """
-
-
 If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.
 
 Not all numbers produce palindromes so quickly. For example,
@@ -30,3 +28,4 @@ How many Lychrel numbers are there below ten-thousand?
 NOTE: Wording was modified slightly on 24 April 2007 to emphasise the theoretical nature of Lychrel numbers.
 
 """""
+
