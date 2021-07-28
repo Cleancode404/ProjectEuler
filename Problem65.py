@@ -1,3 +1,4 @@
 """"
-Convergetns of e
+Convergents of e
 """""
+
