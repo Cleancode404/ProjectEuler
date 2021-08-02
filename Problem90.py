@@ -1,3 +1,4 @@
 """
 Cube digit pairs
 """
+
