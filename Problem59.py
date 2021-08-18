@@ -1,7 +1,4 @@
 """
-
-
-
 Each character on a computer is assigned a unique code
  and the preferred standard is ASCII (American Standard Code for Information Interchange). 
  For example, uppercase A = 65, asterisk (*) = 42, and lowercase k = 107.
@@ -31,4 +28,4 @@ Using p059_cipher.txt (right click and 'Save Link/Target As...'),
  and the knowledge that the plain text must contain common English words,
   decrypt the message and find the sum of the ASCII values in the original text.
 
-""""
+"""""
