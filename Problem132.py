@@ -1,0 +1,4 @@
+"""
+Large repunit factors
+
+"""
