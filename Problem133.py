@@ -1,0 +1,4 @@
+"""
+Repunit nonfactors
+
+"""
