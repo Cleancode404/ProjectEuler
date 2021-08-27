@@ -1,0 +1,4 @@
+"""
+Special isosceles triangles
+
+"""
