@@ -1,0 +1,4 @@
+"""
+Modified Fibonacci golden nuggets
+
+"""
