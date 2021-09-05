@@ -1,0 +1,3 @@
+"""
+Investigating a Prime Pattern 
+"""
