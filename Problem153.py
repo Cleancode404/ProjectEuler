@@ -1,0 +1,3 @@
+"""
+Investigating Gaussian Integers
+"""
