@@ -1,0 +1,3 @@
+"""
+Exploring Pascal's pyramid
+"""
