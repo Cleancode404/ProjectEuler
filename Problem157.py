@@ -1,0 +1,3 @@
+"""
+Solving the diophantine equation
+"""
