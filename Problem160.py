@@ -1,0 +1,3 @@
+"""
+Factorial trailing digits
+"""
