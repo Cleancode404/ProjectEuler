@@ -1,0 +1,3 @@
+"""
+Consecutive positive divisors
+"""
