@@ -1,0 +1,3 @@
+"""
+Maximum product of parts
+"""
