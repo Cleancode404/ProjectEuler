@@ -1,0 +1,3 @@
+"""
+Triangles containing the origin
+"""
