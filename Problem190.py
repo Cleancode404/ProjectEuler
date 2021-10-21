@@ -1,0 +1,3 @@
+"""
+Maximising a weighted product
+"""
