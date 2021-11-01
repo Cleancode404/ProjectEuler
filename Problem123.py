@@ -4,10 +4,6 @@ Prime square remainders
 """
 
 import time
-
-
-
-import time
 from pe069 import prime_sieve
 
 if __name__ == '__main__':
