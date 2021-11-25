@@ -5,9 +5,6 @@ order fractions
 import time
 from pe069 import prime_sieve
 
-__date__ = '14-4-5'
-__author__ = 'SUN'
-
 def totient(n):
     phi = 1
     for i in range(2, int(n ** 0.5) + 1):
