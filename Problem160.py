@@ -1,3 +1,4 @@
 """
 Factorial trailing digits
 """
+
