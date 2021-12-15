@@ -16,3 +16,18 @@ find the value of the denominator.
 
 """""
 
+def gcd(m, n):
+    while m != 0:
+        m, n = n % m, m
+    return n
+
+if __name__ == '__main__':
+    numerator, denominator = 1, 1
+    for i in range(10, 100):
+        for j in range(10, i):
+            if i % 10 != 0 and i % 10 != i // 10 and j % 10 == i // 10 and j / i == (j // 10) / (i % 10):
+                print(j, "/", i, " = ", j // 10, "/", i % 10)
+                numerator *= j
+                denominator *= i
+    denominator //= gcd(numerator, denominator)
+    print("solution = ", denominator)
