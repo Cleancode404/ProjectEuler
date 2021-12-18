@@ -25,3 +25,29 @@ as the sum of two abundant numbers.
 
 
 
+def is_abundant(n):
+    s = 0
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            s += i + n // i
+    if int(n ** 0.5) ** 2 == n:
+        s -= int(n ** 0.5)
+    return s > n
+
+
+if __name__ == '__main__':
+    a = []
+    for i in range(28124):
+        a.append(is_abundant(i))
+    answer = 0
+    for i in range(28124):
+        for j in range(i):
+            if a[j] and a[i - j]:
+                break
+            if j == i - 1:
+                answer += i
+                break
+    print((answer))
+
+
+
