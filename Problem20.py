@@ -9,3 +9,12 @@ Find the sum of the digits in the number 100!
 
 """""
 
+if __name__ == '__main__':
+    factorial = 1
+    for i in range(1, 101):
+        factorial *= i
+    answer = 0
+    while factorial != 0:
+        answer += factorial % 10
+        factorial //= 10
+    print(answer)
