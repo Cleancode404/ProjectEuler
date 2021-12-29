@@ -16,3 +16,14 @@ as the sum of fifth powers of their digits.
 
 """""
 
+if __name__ == '__main__':
+    answer = 0
+    for i in range(2, 1000000):
+        digitSum = 0
+        j = i
+        while j > 0:
+            digitSum += (j % 10) ** 5
+            j //= 10
+        if digitSum == i:
+            answer += i
+    print(answer)
