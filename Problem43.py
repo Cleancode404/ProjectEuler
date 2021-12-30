@@ -18,4 +18,28 @@ In this way, we note the following:
 Find the sum of all 0 to 9 pandigital numbers with this property.
 
 """""
+import time 
 
+def pandigital(s):
+    pan = ['']
+    for c in s:
+        temp = []
+        for word in pan:
+            for i in range(len(word) + 1):
+                temp.append(word[0:i] + c + word[i:])
+        pan = temp
+    return pan
+
+def is_divisible(s):
+    prime = [2, 3, 5, 7, 11, 13, 17]
+    for i in range(7):
+        if int(s[i+1:i+4]) % prime[i] != 0:
+            return False
+    return True
+
+if __name__ == '__main__':
+    start = time.clock()
+    p = pandigital('0123456789')
+    res = 0
+    print(sum(int(word) for word in p if is_divisible(word)))
+    print('Runtime is ', time.clock() - start)
